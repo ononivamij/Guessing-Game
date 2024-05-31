@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+   <main>
+    <section>
+        <div class="container">
+         <h1 class="guessing">Guess the Correct Number</h1>   
+         <p class="text">Try and guess a random number between 1 and 100.</p>
+         <p>You have three attempt to guess the right number.</p>
+
+         <!-- An input field -->
+         <div id="wrapper">
+           <form action="" class="form">
+            <label for="" id="guess">Guess a Number</label>
+            <input type="text" id="guessfield" class="guessfield">
+            <button type="submit" id="submit" value="Submit" class="guess-submit">Submit Your Guess</button>
+           </form> 
+         </div>
+         
+         <!--Result for Guesses  -->
+         <div class="resultpress">
+          <p> Previous Guesses: <span class="guesses"></span></p>
+          <p> Guesses Remaining: <span class="last-result">10</span></p> 
+          <p class="low-high"></p>
+         </div>
+        </div>
+
+    </section>
+   </main>
+   <script src="./script.js"></script> 
+</body>
+</html>
