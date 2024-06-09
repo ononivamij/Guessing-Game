@@ -44,3 +44,20 @@ function validateGuess(guess){
     }
 }
 
+function checkGuess(guess){
+    if (guess ===randomNumber){
+      displayMessage('You guessed correctly');
+       endGame(); 
+    } else if (guess < randomNumber) {
+     displayMessage('Too low! Try again'); 
+    } else if (guess > randomNumber) {
+        displayMessage('Too High! Try again');
+    }
+}
+
+function displayGuesses(guess){
+    userInput.value = '';
+    guessSlot.innerHTML += '${guess} ' ;
+    numGuesses ''
+    remaining.innerHTML = '${11 -numGuesses}' ;
+}
