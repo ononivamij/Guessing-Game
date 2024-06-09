@@ -58,6 +58,6 @@ function checkGuess(guess){
 function displayGuesses(guess){
     userInput.value = '';
     guessSlot.innerHTML += '${guess} ' ;
-    numGuesses ''
+    numGuesses++ 
     remaining.innerHTML = '${11 -numGuesses}' ;
 }
